@@ -1,0 +1,75 @@
+[
+  {
+    "position": "Business Manager",
+    "location": "Seattle, WA",
+    "company": "Flying Couch Moving",
+    "startDate": "09/24/2018",
+    "leaveDate": "07/23/2019",
+    "description": [
+      "Visited residential and commercial clients, made inventory assessments and drafted job estimates with a high success rate of contracting.",
+      "Upgraded work forms by complying with regulations to reduce liability & reduced processing time allowing to respond faster, and to more clients.",
+      "Coordinated jobs to have sufficient materials, trucks & employees. Joined crews as driver or laborer when needed.",
+      "Consulted & responded to phone & online inquiries."
+    ],
+    "logo": "images/logos/flying-couch-moving.jpg"
+  },
+  {
+    "position": "Office Manager",
+    "location": "Plainville, CT",
+    "company": "Choice Motor Car",
+    "startDate": "03/00/2017",
+    "leaveDate": "09/15/2018",
+    "description": [
+      "Processed car loan application & structured deals for maximum profitability.",
+      "Ensured compliance with title laws and registration process, significantly reducing incompliance letters & fines from DMV.",
+      "Provided an option to apply online, opening a pool of new customers.",
+      "Revamped deal funding process to same day funding (where possible), reducing distractions and time wasted after the vehicle delivery.",
+      "Significantly reduced time of document processing and vehicle delivery by developing an application, resulting in better customer satisfaction."
+    ],
+    "logo": "images/logos/choice-motor-car.jpg"
+  },
+  {
+    "position": "Jr. Web Developer",
+    "location": "Vilnius, Lithuania",
+    "company": "PikoData",
+    "startDate": "09/02/2015",
+    "leaveDate": "01/24/2016",
+    "description": [
+      "Website creation and administration. Work was with Drupal, WordPress systems. HTML, CSS, PHP, JavaScript languages, Photoshop."
+    ],
+    "logo": "images/logos/pikodata.jpg"
+  },
+  {
+    "position": "Sales Consultant",
+    "location": "Vilnius, Lithuania",
+    "company": "Sony Europe Ltd.",
+    "startDate": "01/00/2015",
+    "leaveDate": "06/00/2016",
+    "description": [
+      "Showcased to store and event shoppers the latest innovations in Sony products.",
+      "Explained product features and recommended solutions that fit the individual needs of the customer giving them a unique and highly personalized in-store experience.",
+      "Achieved individual sales goals on a regular basis.",
+      "Trained in-store sales associates and managers of Sony features and benefits.",
+      "Ensured that products were properly merchandised, displayed and functional."
+    ],
+    "logo": "images/logos/sony.jpg"
+  },
+  {
+    "position": "Moving Helper",
+    "location": "Los Angeles, CA",
+    "company": "Beverly Hills Transfer & Storage",
+    "startDate": "06/10/2014",
+    "leaveDate": "09/21/2014",
+    "description": ["Careful furniture and item relocation, packing, loading and offloading a truck, warehouse work."],
+    "logo": "images/logos/beverly-hills-transfer.jpg"
+  },
+  {
+    "position": "",
+    "location": "",
+    "company": "",
+    "startDate": "",
+    "leaveDate": "",
+    "description": [],
+    "logo": "images/logos/*.jpg"
+  }
+]
