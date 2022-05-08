@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Vilnius University",
+    "startDate": "2010",
+    "finishDate": "2016",
+    "location": "Vilnius, Lithuania",
+    "logo": "images/logos/Vilnius University.jpg",
+    "degreeShort": "HS",
+    "degree": "High school diploma"
+  },
+  {
+    "name": "Birzai Ausra Secondary School",
+    "startDate": "1998",
+    "finishDate": "2010",
+    "location": "Birzai, Lithuania",
+    "logo": "images/logos/Ausra Secondary School.jpg",
+    "degreeShort": "BSc",
+    "degree": "Bachelor of Science"
+  }
+]
