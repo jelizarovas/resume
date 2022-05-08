@@ -6,12 +6,23 @@ import {
   MdPerson,
   MdPhone,
   MdPinDrop,
+  MdVolumeUp,
 } from "react-icons/md";
+import Player from "./Player";
 
 export const Header = () => {
   return (
     <div className="flex flex-col">
-      <SubHeader title="Name" data={person.displayName} Icon={MdPerson} />
+      <div className="flex">
+        <SubHeader title="Name" data={person.displayName} Icon={MdPerson} />
+        <Player
+          url={
+            process.env.PUBLIC_URL +
+            "/sounds/Arnas Jeliarovas name sound it out.mp3"
+          }
+        />
+      </div>
+
       <SubHeader title="Phone" data={person.phoneNumber} Icon={MdPhone} />
       <SubHeader title="Email" data={person.email} Icon={MdEmail} />
       <SubHeader title="DOB" data={person.dateOfBirth} Icon={MdCalendarToday} />
