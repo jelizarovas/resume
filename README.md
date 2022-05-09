@@ -1,5 +1,15 @@
 # Resume
 
+## Usage
+
+To generate current pdf.
+
+```bash
+$ cd functions
+$ npm i
+$ node index
+```
+
 ## Contacts
 
 - What do I call you

@@ -6,14 +6,13 @@ import {
   MdPerson,
   MdPhone,
   MdPinDrop,
-  MdVolumeUp,
 } from "react-icons/md";
 import Player from "./Player";
 
 export const Header = () => {
   return (
     <div className="flex flex-col">
-      <div className="flex">
+      <div className="flex py-1 items-center">
         <SubHeader title="Name" data={person.displayName} Icon={MdPerson} />
         <Player
           url={
