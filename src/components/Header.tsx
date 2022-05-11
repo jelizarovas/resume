@@ -14,7 +14,7 @@ import Player from "./Player";
 export const Header = () => {
   return (
     <>
-      <div className="flex flex-col sm:flex-row flex-wrap py-2">
+      <div className="max-w-[640px] mx-auto flex flex-col sm:flex-row flex-wrap py-2">
         <SubHeader
           title="Name"
           className="order-1"
