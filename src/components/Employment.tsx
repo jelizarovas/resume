@@ -28,9 +28,9 @@ type PositionType = {
 
 const Job = ({ job }: { job: JobType }) => {
   return (
-    <div className="jobDiv flex flex-col md:flex-row pt-4  pb-4 group transition-all">
-      <div className="flex min-w-[300px]">
-        <div className="aspect-square max-w-[60px] flex items-start mx-4 rounded">
+    <div className="jobDiv flex flex-col print:flex-row md:flex-row pt-4  pb-4 group transition-all">
+      <div className="flex min-w-[300px]  bg-white">
+        <div className="aspect-square w-[60px] h-[60px] flex items-center mx-4 rounded">
           <img
             src={job.logo}
             alt={job.company}
@@ -38,13 +38,13 @@ const Job = ({ job }: { job: JobType }) => {
           />
         </div>
         <div className="flex flex-col">
-          <span className="uppercase whitespace-nowrap font-bold text-slate-700 ">
+          <span className="uppercase whitespace-nowrap font-bold text-gray-700 ">
             {job.company}
           </span>
-          <span className="text-xs whitespace-nowrap text-slate-500">
+          <span className="text-xs whitespace-nowrap text-gray-500">
             {getCompanyTenure(job.positions)}
           </span>
-          <span className="text-xs whitespace-nowrap text-slate-500">
+          <span className="text-xs whitespace-nowrap text-gray-500">
             {job.location}
           </span>
         </div>
@@ -60,8 +60,8 @@ const Job = ({ job }: { job: JobType }) => {
 
 const Position = ({ position }: { position: PositionType }) => {
   return (
-    <div className="w-full  px-4 mt-2 md:mt-0">
-      <div className="border-b-2 border-gray-200 px-2 md:px-0 flex items-center justify-between">
+    <div className="w-full  px-4 mt-2 md:mt-0 print:mt-0">
+      <div className="border-b-2 border-gray-200 px-2 print:px-0 md:px-0 flex items-center justify-between">
         <span className="uppercase font-semibold">{position.title}</span>
         <div className="text-gray-500 text-xs select-none">
           {timeEmployed(position.startDate, position?.leaveDate || undefined)}

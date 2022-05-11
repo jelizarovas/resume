@@ -14,7 +14,7 @@ import Player from "./Player";
 export const Header = () => {
   return (
     <>
-      <div className="max-w-[640px] mx-auto flex flex-col sm:flex-row flex-wrap py-2">
+      <div className="max-w-[640px]  mx-auto flex flex-col sm:flex-row print:flex-row flex-wrap py-2 print:py-0 print:flex">
         <SubHeader
           title="Name"
           className="order-1"
@@ -40,7 +40,7 @@ export const Header = () => {
           title="Location"
           data={person.location}
           Icon={MdPinDrop}
-          className="order-4 sm:order-3"
+          className="order-4 sm:order-3 print:order-3"
         />
 
         <SubHeader
@@ -48,7 +48,7 @@ export const Header = () => {
           type="email"
           data={person.email}
           Icon={MdEmail}
-          className="order-3 sm:order-4"
+          className="order-3 sm:order-4 print:order-4"
         />
         {/* <SubHeader title="DOB" data={person.dateOfBirth} Icon={MdCalendarToday} /> */}
       </div>
@@ -100,7 +100,7 @@ const SubHeader = ({
   return (
     <div
       className={
-        "flex text-xl w-full sm:w-1/2 space-x-2 items-center py-2 px-4 " +
+        "flex text-xl w-full sm:w-1/2 print:w-1/2 space-x-2 items-center py-2 px-4 " +
         className
       }
     >

@@ -33,7 +33,7 @@ const Player = ({ url }: PlayerProps) => {
       onClick={toggle}
       className={`${
         playing ? "opacity-95" : "opacity-50"
-      } hover:opacity-100 hover:bg-indigo-200 rounded-full p-2 hover:text-indigo-800 transition-all`}
+      } print:hidden hover:opacity-100 hover:bg-indigo-200 rounded-full p-2 hover:text-indigo-800 transition-all`}
     >
       {playing ? <MdVolumeOff /> : <MdVolumeUp />}
     </button>
