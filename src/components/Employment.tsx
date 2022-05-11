@@ -26,13 +26,13 @@ type JobType = {
 
 const Job = ({ job }: { job: JobType }) => {
   return (
-    <div className="jobDiv flex flex-col  py-4">
+    <div className="jobDiv flex flex-col  py-4 group transition-all">
       <div className="flex ">
         <div className="aspect-square max-w-[80px] flex items-center mx-4 rounded">
           <img
             src={job.logo}
             alt={job.company}
-            className="grayscale hover:grayscale-0 transition-all"
+            className="grayscale hover:grayscale-0 group-hover:grayscale-[50%]  transition-all"
           />
         </div>
         <div className="flex flex-col">
