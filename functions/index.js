@@ -26,6 +26,7 @@ async function printPDF() {
     path: path.join("../public/pdf", "Arnas Jelizarovas Resume EN.pdf"),
     format: "letter",
     displayHeaderFooter: true,
+    printBackground: true,
     // scale: 0.8,
     margin: {
       top: 35,

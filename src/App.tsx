@@ -6,7 +6,7 @@ import { Header } from "./components/Header";
 
 function App() {
   return (
-    <div className="App container mx-auto bg-white shadow-xl">
+    <div className="App container mx-auto bg-white shadow-xl print:shadow-none">
       <Header />
       <Employment />
       <Education />
