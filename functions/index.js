@@ -2,6 +2,7 @@
 
 const puppeteer = require("puppeteer");
 const path = require("path");
+const person = require("../src/api/person.json");
 
 async function printPDF() {
   const browser = await puppeteer.launch({
@@ -15,8 +16,11 @@ async function printPDF() {
     content: `.nav { display: none} 
       .navbar { border: 0px} 
       #print-button {display: none}
+      @page:first {margin-top: 0;}
       `,
   });
+
+  const now = new Date();
 
   const pdf = await page.pdf({
     path: path.join("../public/pdf", "Arnas Jelizarovas Resume EN.pdf"),
@@ -24,15 +28,21 @@ async function printPDF() {
     displayHeaderFooter: true,
     // scale: 0.8,
     margin: {
-      top: 30,
+      top: 35,
       right: 35,
       bottom: 100,
       left: 25,
     },
+    headerTemplate: `
+    <div style="color: lightgray; font-size: 8px;  text-align: center; width: 90%;  margin-left: auto;  margin-right: auto; display: flex; justify-content: space-between;">
+      <span>${person.displayName} Resume</span> <div>Phone:${person.phoneNumber}, Email: ${person.email}</div>
+      
+    </div>
+  `,
     footerTemplate: `
-          <div style="color: lightgray; border-top: solid lightgray 1px; font-size: 10px; padding-top: 5px; text-align: center; width: 100%;">
-            <span>Written in Typescript and React, generated with Puppeteer</span> - <span class="pageNumber"></span>
-            <a href="https://jelizarovas.com" target="_blank">jelizarovas.com</a>
+          <div style="color: lightgray; font-size: 8px; padding-top: 5px; text-align: center; width: 90%;  margin-left: auto;  margin-right: auto; display: flex; justify-content: space-between;">
+            <span>This resume was written in Typescript and React, generated with Puppeteer on ${now.toLocaleDateString()}, <a href="https://github.com/jelizarovas/resume" style="color: lightgray;" target="_blank">source</a></span> <div>Page <span class="pageNumber"></span> of <span class="totalPages"></span> </div>
+            
           </div>
         `,
   });
