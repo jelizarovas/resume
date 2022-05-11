@@ -4,7 +4,7 @@ import { Section } from "./Section";
 
 export const Education = () => {
   return (
-    <Section title="EDUCATION">
+    <Section title="EDUCATION HISTORY">
       <div className="flex flex-col">
         {education.map((school, i) => (
           <School key={i} school={school} />
@@ -24,7 +24,7 @@ type SchoolType = {
 
 const School = ({ school }: { school: SchoolType }) => {
   return (
-    <div className="flex flex-col  py-2 border">
+    <div className="jobDiv flex flex-col  py-2 border">
       <div className="flex ">
         <div className="aspect-square max-w-[80px] flex items-center mx-4 rounded">
           <img

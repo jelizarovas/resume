@@ -11,7 +11,7 @@ import Player from "./Player";
 
 export const Header = () => {
   return (
-    <div className="flex flex-col md:flex-row flex-wrap py-4">
+    <div className="flex flex-col sm:flex-row flex-wrap py-4">
       <SubHeader
         title="Name"
         data={person.displayName}
@@ -61,7 +61,7 @@ const SubHeader = ({
   ...props
 }: SubHeaderType) => {
   return (
-    <div className="flex text-xl w-full md:w-1/2 space-x-2 items-center py-2 px-4">
+    <div className="flex text-xl w-full sm:w-1/2 space-x-2 items-center py-2 px-4">
       {Icon && <Icon className="" />}
       <span className="hidden">{title}</span>
       {

@@ -4,12 +4,12 @@ import { Section } from "./Section";
 
 export const Employment = () => {
   return (
-    <Section title="WORK HISTORY">
-      <div className="flex flex-col">
-        {employment.map((job, i) => (
-          <Job key={i} job={job} />
-        ))}
-      </div>
+    <Section title="PROFESSIONAL HISTORY">
+      {/* <div className="flex flex-col"> */}
+      {employment.map((job, i) => (
+        <Job key={i} job={job} />
+      ))}
+      {/* </div> */}
     </Section>
   );
 };
@@ -26,7 +26,7 @@ type JobType = {
 
 const Job = ({ job }: { job: JobType }) => {
   return (
-    <div className="flex flex-col  py-2 border">
+    <div className="jobDiv flex flex-col  py-4">
       <div className="flex ">
         <div className="aspect-square max-w-[80px] flex items-center mx-4 rounded">
           <img
@@ -54,14 +54,12 @@ const Job = ({ job }: { job: JobType }) => {
         </div>
       </div>
 
-      <div className="flex flex-col items-stretch">
-        <div className="flex flex-col">
-          {job.description.map((duty, i) => (
-            <span className="py-0.5 px-4" key={i}>
-              {duty}
-            </span>
-          ))}
-        </div>
+      <div className="flex flex-col text-xs items-stretch mt-2">
+        {job.description.map((duty, i) => (
+          <span className="py-0.5 px-4" key={i}>
+            {duty}
+          </span>
+        ))}
       </div>
     </div>
   );
