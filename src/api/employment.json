@@ -1,5 +1,31 @@
 [
   {
+    "position": "Technical Support Manager",
+    "location": "Seattle, WA",
+    "company": "Super Friends Moving",
+    "startDate": "11/01/2021",
+    "description": [],
+    "logo": "images/logos/sfm.jpg"
+  },
+  {
+    "position": "Crew Lead",
+    "location": "Seattle, WA",
+    "company": "Super Friends Moving",
+    "startDate": "02/28/2020",
+    "leaveDate": "10/30/2021",
+    "description": [],
+    "logo": "images/logos/sfm.jpg"
+  },
+  {
+    "position": "Mover/Driver",
+    "location": "Seattle, WA",
+    "company": "Super Friends Moving",
+    "startDate": "02/04/2020",
+    "leaveDate": "06/27/2020",
+    "description": [],
+    "logo": "images/logos/sfm.jpg"
+  },
+  {
     "position": "Business Manager",
     "location": "Seattle, WA",
     "company": "Flying Couch Moving",
@@ -17,7 +43,7 @@
     "position": "Office Manager",
     "location": "Plainville, CT",
     "company": "Choice Motor Car",
-    "startDate": "03/00/2017",
+    "startDate": "03/01/2017",
     "leaveDate": "09/15/2018",
     "description": [
       "Processed car loan application & structured deals for maximum profitability.",
@@ -43,8 +69,8 @@
     "position": "Sales Consultant",
     "location": "Vilnius, Lithuania",
     "company": "Sony Europe Ltd.",
-    "startDate": "01/00/2015",
-    "leaveDate": "06/00/2016",
+    "startDate": "01/15/2015",
+    "leaveDate": "06/27/2016",
     "description": [
       "Showcased to store and event shoppers the latest innovations in Sony products.",
       "Explained product features and recommended solutions that fit the individual needs of the customer giving them a unique and highly personalized in-store experience.",
@@ -60,7 +86,9 @@
     "company": "Beverly Hills Transfer & Storage",
     "startDate": "06/10/2014",
     "leaveDate": "09/21/2014",
-    "description": ["Careful furniture and item relocation, packing, loading and offloading a truck, warehouse work."],
+    "description": [
+      "Careful furniture and item relocation, packing, loading and offloading a truck, warehouse work."
+    ],
     "logo": "images/logos/beverly-hills-transfer.jpg"
   },
   {
