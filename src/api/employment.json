@@ -90,14 +90,5 @@
       "Careful furniture and item relocation, packing, loading and offloading a truck, warehouse work."
     ],
     "logo": "images/logos/beverly-hills-transfer.jpg"
-  },
-  {
-    "position": "",
-    "location": "",
-    "company": "",
-    "startDate": "",
-    "leaveDate": "",
-    "description": [],
-    "logo": "images/logos/*.jpg"
   }
 ]

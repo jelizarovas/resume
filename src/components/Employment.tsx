@@ -1,17 +1,16 @@
 import React from "react";
 import employment from "../api/employment.json";
+import { Section } from "./Section";
 
 export const Employment = () => {
   return (
-    <div>
-      <h2>Employment</h2>
-
+    <Section title="WORK HISTORY">
       <div className="flex flex-col">
         {employment.map((job, i) => (
           <Job key={i} job={job} />
         ))}
       </div>
-    </div>
+    </Section>
   );
 };
 
@@ -30,7 +29,11 @@ const Job = ({ job }: { job: JobType }) => {
     <div className="flex flex-col  py-2 border">
       <div className="flex ">
         <div className="aspect-square max-w-[80px] flex items-center mx-4 rounded">
-          <img src={job.logo} alt={job.company} className="" />
+          <img
+            src={job.logo}
+            alt={job.company}
+            className="grayscale hover:grayscale-0 transition-all"
+          />
         </div>
         <div className="flex flex-col">
           <span className="uppercase whitespace-nowrap font-bold text-indigo-900 ">

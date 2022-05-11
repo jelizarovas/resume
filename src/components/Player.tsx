@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { MdVolumeMute, MdVolumeOff, MdVolumeUp } from "react-icons/md";
+import { MdVolumeOff, MdVolumeUp } from "react-icons/md";
 
 const useAudio = (url: string) => {
   const [audio] = useState(new Audio(url));
@@ -29,11 +29,14 @@ const Player = ({ url }: PlayerProps) => {
   const [playing, toggle] = useAudio(url);
 
   return (
-    <div>
-      <button onClick={toggle}>
-        {playing ? <MdVolumeOff /> : <MdVolumeUp />}
-      </button>
-    </div>
+    <button
+      onClick={toggle}
+      className={`${
+        playing ? "opacity-95" : "opacity-50"
+      } hover:opacity-100 hover:bg-indigo-200 rounded-full p-2 hover:text-indigo-800 transition-all`}
+    >
+      {playing ? <MdVolumeOff /> : <MdVolumeUp />}
+    </button>
   );
 };
 
