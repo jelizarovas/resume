@@ -12,11 +12,10 @@ export const Section = (props: {
 }) => {
   return (
     <section>
-      <details className=" py-2" open>
-        <summary className="select-none bg-indigo-50 py-4 uppercase text-xl px-4">
+      <details className="" open>
+        <summary className="select-none bg-slate-600 text-white py-4 uppercase text-xl px-4">
           {props.title}
         </summary>
-
         {props.children}
       </details>
     </section>

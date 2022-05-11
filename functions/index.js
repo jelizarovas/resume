@@ -19,7 +19,7 @@ async function printPDF() {
   });
 
   const pdf = await page.pdf({
-    path: path.join("./", "Arnas Jelizarovas Resume EN.pdf"),
+    path: path.join("../public/pdf", "Arnas Jelizarovas Resume EN.pdf"),
     format: "letter",
     displayHeaderFooter: true,
     // scale: 0.8,

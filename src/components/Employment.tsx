@@ -26,7 +26,7 @@ type JobType = {
 
 const Job = ({ job }: { job: JobType }) => {
   return (
-    <div className="jobDiv flex flex-col  py-4 group transition-all">
+    <div className="jobDiv flex flex-col  pb-4 group transition-all">
       <div className="flex ">
         <div className="aspect-square max-w-[80px] flex items-center mx-4 rounded">
           <img
