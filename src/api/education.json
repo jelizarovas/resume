@@ -6,7 +6,8 @@
     "location": "Vilnius, Lithuania",
     "logo": "images/logos/Vilnius University.jpg",
     "degreeShort": "BSc",
-    "degree": "Bachelor of Science"
+    "degree": "Bachelor of Science",
+    "website": "https://birzuausra.lt/"
   },
   {
     "name": "Birzai Ausra",
@@ -15,6 +16,7 @@
     "location": "Birzai, Lithuania",
     "logo": "images/logos/Ausra Secondary School.jpg",
     "degreeShort": "HS",
-    "degree": "High school diploma"
+    "degree": "High school diploma",
+    "website": "https://www.vu.lt/"
   }
 ]
