@@ -56,9 +56,10 @@ export const Header = () => {
         <div className="flex justify-center space-x-2 items-center group">
           <GrDocumentPdf />
           <a
-            href="/pdf/Arnas Jelizarovas Resume EN.pdf"
+            href={`${process.env.PUBLIC_URL}/pdf/Arnas Jelizarovas Resume EN.pdf`}
             target="_blank"
             className="group-hover:underline"
+            rel="noreferrer"
           >
             View as PDF
           </a>

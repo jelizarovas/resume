@@ -33,7 +33,7 @@ const Job = ({ job }: { job: JobType }) => {
       <div className="flex min-w-[300px]  bg-white">
         <div className="aspect-square w-[60px] h-[60px] flex items-center mx-4 rounded">
           <img
-            src={job.logo}
+            src={process.env.PUBLIC_URL + "/" + job.logo}
             alt={job.company}
             className="grayscale hover:grayscale-0 group-hover:grayscale-[50%]  transition-all"
           />

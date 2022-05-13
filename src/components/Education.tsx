@@ -31,7 +31,7 @@ const School = ({ school }: { school: SchoolType }) => {
       <div className="flex ">
         <div className="aspect-square w-[60px] max-h-[60px] overflow-hidden h-[60px] flex items-center mx-4 rounded">
           <img
-            src={school.logo}
+            src={process.env.PUBLIC_URL + "/" + school.logo}
             alt={school.name}
             className="grayscale hover:grayscale-0 group-hover:grayscale-[50%]  transition-all"
           />
