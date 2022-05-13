@@ -23,6 +23,7 @@ type SchoolType = {
   location: string;
   logo: string;
   degree: string;
+  website: string;
 };
 
 const School = ({ school }: { school: SchoolType }) => {
@@ -37,9 +38,20 @@ const School = ({ school }: { school: SchoolType }) => {
           />
         </div>
         <div className="flex flex-col">
-          <span className="uppercase whitespace-nowrap font-bold text-gray-900 ">
-            {school.name}
+          <span className="flex space-x-2 items-center uppercase whitespace-nowrap font-bold text-gray-900 ">
+            <HiAcademicCap />{" "}
+            <a
+              href={school.website}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:underline"
+            >
+              {school.name}
+            </a>
           </span>
+          <div className="rounded-lg  ">
+            <span>{school.degree}</span>
+          </div>
           <span className="text-xs whitespace-nowrap text-gray-500">
             {parseDateString(school.startDate)} -{" "}
             {parseDateString(school.finishDate)}
@@ -49,11 +61,7 @@ const School = ({ school }: { school: SchoolType }) => {
           </span>
         </div>
       </div>
-      <div className="flex flex-col items-stretch">
-        <div className="flex space-x-2 items-center px-6 py-2 mt-1 rounded-lg  ">
-          <HiAcademicCap /> <span>{school.degree}</span>
-        </div>
-      </div>
+      <div className="flex flex-col items-stretch"></div>
     </div>
   );
 };
