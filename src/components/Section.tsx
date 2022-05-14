@@ -11,9 +11,9 @@ export const Section = (props: {
     | undefined;
 }) => {
   return (
-    <section>
+    <section className="pb-10">
       <details className="" open>
-        <summary className="print:list-none print:border-b-2 select-none bg-slate-600 text-white py-4 print:py-1  uppercase text-lg px-4">
+        <summary className="print:list-none select-none bg-slate-600 text-white py-4 print:py-1  uppercase text-lg px-4">
           {props.title}
         </summary>
         {props.children}

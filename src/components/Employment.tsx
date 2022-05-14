@@ -1,4 +1,5 @@
 import React from "react";
+import { MdOpenInNew } from "react-icons/md";
 import employment from "../api/employment.json";
 import { getCompanyTenure, timeEmployed } from "../common/utils";
 import { Section } from "./Section";
@@ -18,6 +19,7 @@ type JobType = {
   location: string;
   company: string;
   logo: string;
+  website: string;
 };
 
 export type PositionType = {
@@ -39,9 +41,9 @@ const Job = ({ job }: { job: JobType }) => {
           />
         </div>
         <div className="flex flex-col">
-          <span className="uppercase whitespace-nowrap font-bold text-gray-700 ">
-            {job.company}
-          </span>
+          <a href={job.website} target="_blank"  className=" text-blue-100  hover:text-blue-400 transition-all uppercase whitespace-nowrap font-bold  flex space-x-1 pr-2 items-center" rel="noreferrer">
+           <span className="text-gray-700 hover:underline"> {job.company}</span> <span className=" print:hidden "><MdOpenInNew /></span>
+          </a>
           <span className="text-xs whitespace-nowrap text-gray-500">
             {getCompanyTenure(job.positions)}
           </span>

@@ -3,6 +3,7 @@ import education from "../api/education.json";
 import { parseDateString } from "../common/utils";
 import { Section } from "./Section";
 import { HiAcademicCap } from "react-icons/hi";
+import { MdOpenInNew } from "react-icons/md";
 
 export const Education = () => {
   return (
@@ -39,15 +40,12 @@ const School = ({ school }: { school: SchoolType }) => {
         </div>
         <div className="flex flex-col">
           <span className="flex space-x-2 items-center uppercase whitespace-nowrap font-bold text-gray-900 ">
-            <HiAcademicCap />{" "}
-            <a
-              href={school.website}
-              target="_blank"
-              rel="noreferrer"
-              className="hover:underline"
-            >
-              {school.name}
-            </a>
+           
+          
+          
+            <a href={school.website} target="_blank"  className=" text-blue-100  hover:text-blue-400 transition-all uppercase whitespace-nowrap font-bold  flex space-x-1 pr-2 items-center" rel="noreferrer">
+            <HiAcademicCap className="text-gray-700 hover:underline" /> <span className="text-gray-700 hover:underline"> {school.name}</span> <span className=" print:hidden "><MdOpenInNew /></span>
+          </a>
           </span>
           <div className="rounded-lg  ">
             <span>{school.degree}</span>

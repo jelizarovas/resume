@@ -2,24 +2,33 @@
   {
     "location": "Seattle, WA",
     "company": "Super Friends Moving",
+    "website": "https://superfriendsmoving.com/",
     "logo": "images/logos/sfm.jpg",
     "positions": [
       {
         "title": "Technical Support Manager",
         "startDate": "11/01/2021",
-        "description": ["Build internal tools"]
+        "leaveDate": "5/13/2022",
+        "description": ["Build internal tools as fullstack developer"]
       },
       {
         "title": "Crew Lead",
         "startDate": "06/28/2020",
         "leaveDate": "10/30/2021",
-        "description": ["Leading Crews Moving Customers"]
+        "description": [
+          "Trained new employees on safety, and moving techniques and supervised crews of up to 10",
+          "Made inventories and records of the furniture, material and supplies received for delivery. Delivered and made sure that each is well accounted for"
+        ]
       },
       {
         "title": "Mover/Driver",
         "startDate": "02/04/2020",
         "leaveDate": "06/27/2020",
-        "description": ["Moving Customers"]
+        "description": [
+          "Loaded, packed and unpacked items, disassembled and assembled furniture for residential and commercial accounts",
+          "Provided safe, on-time, and dependable transportation with a safe driving record",
+          "Ensured that no items or property were damaged and the customer was always satisfied."
+        ]
       }
     ]
   },
@@ -28,6 +37,7 @@
     "location": "Seattle, WA",
     "company": "Flying Couch Moving",
     "logo": "images/logos/flying-couch-moving.jpg",
+    "website": "https://www.google.com/search?q=flying+couch+moving&rlz=1C1GCEA_enUS900US900",
     "positions": [
       {
         "title": "Business Manager",
@@ -46,6 +56,7 @@
     "location": "Plainville, CT",
     "company": "Choice Motor Car",
     "logo": "images/logos/choice-motor-car.jpg",
+    "website": "https://www.choice-motorcar.com/",
     "positions": [
       {
         "startDate": "03/01/2017",
@@ -65,6 +76,7 @@
     "location": "Vilnius, Lithuania",
     "logo": "images/logos/pikodata.jpg",
     "company": "PikoData",
+    "website": "https://pikodata.lt/index_EN.html",
     "positions": [
       {
         "title": "Jr. Web Developer",
@@ -80,6 +92,7 @@
     "location": "Vilnius, Lithuania",
     "company": "Sony Europe Ltd.",
     "logo": "images/logos/sony.jpg",
+    "website": "https://www.sony.co.uk/",
     "positions": [
       {
         "title": "Sales Consultant",
@@ -99,6 +112,7 @@
     "location": "Los Angeles, CA",
     "company": "Beverly Hills Transfer",
     "logo": "images/logos/beverly-hills-transfer.jpg",
+    "website": "https://beverlyhillstransfer.com/",
     "positions": [
       {
         "title": "Moving Helper",
