@@ -3,7 +3,7 @@
     "location": "Seattle, WA",
     "company": "Super Friends Moving",
     "website": "https://superfriendsmoving.com/",
-    "logo": "images/logos/sfm.jpg",
+    "logo": "images/logos/sfm.png",
     "positions": [
       {
         "title": "Technical Support Manager",
@@ -36,7 +36,7 @@
   {
     "location": "Seattle, WA",
     "company": "Flying Couch Moving",
-    "logo": "images/logos/flying-couch-moving.jpg",
+    "logo": "images/logos/flying-couch-moving.png",
     "website": "https://www.google.com/search?q=flying+couch+moving&rlz=1C1GCEA_enUS900US900",
     "positions": [
       {
@@ -55,7 +55,7 @@
   {
     "location": "Plainville, CT",
     "company": "Choice Motor Car",
-    "logo": "images/logos/choice-motor-car.jpg",
+    "logo": "images/logos/choice-motor-car.png",
     "website": "https://www.choice-motorcar.com/",
     "positions": [
       {
@@ -74,7 +74,7 @@
   },
   {
     "location": "Vilnius, Lithuania",
-    "logo": "images/logos/pikodata.jpg",
+    "logo": "images/logos/pikodata.png",
     "company": "PikoData",
     "website": "https://pikodata.lt/index_EN.html",
     "positions": [
@@ -111,7 +111,7 @@
   {
     "location": "Los Angeles, CA",
     "company": "Beverly Hills Transfer",
-    "logo": "images/logos/beverly-hills-transfer.jpg",
+    "logo": "images/logos/beverly-hills-transfer.png",
     "website": "https://beverlyhillstransfer.com/",
     "positions": [
       {

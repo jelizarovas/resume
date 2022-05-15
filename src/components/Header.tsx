@@ -72,7 +72,7 @@ export const Header = () => {
             className="group-hover:underline"
             rel="noreferrer"
           >
-            View Source
+            View Source Code
           </a>
         </div>
       </div>
