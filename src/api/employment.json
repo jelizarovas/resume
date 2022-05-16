@@ -10,7 +10,12 @@
         "startDate": "11/01/2021",
         "leaveDate": "5/13/2022",
         "type": ["manager", "developer"],
-        "description": ["Build internal tools as fullstack developer"]
+        "description": [
+          "Built internal tools for warehouse management as fullstack developer",
+          "Assisted with technical hardware or software issues around the office",
+          "Moved and documented company workflows to github organisation",
+          "Screened, helped hire and onboarded new employees"
+        ]
       },
       {
         "title": "Crew Lead",
