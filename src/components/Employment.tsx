@@ -5,11 +5,15 @@ import { getCompanyTenure, timeEmployed } from "../common/utils";
 import { Section } from "./Section";
 
 export const Employment = () => {
+  const [filter, setFilter] = React.useState(["developer", "manager", "sales"]);
+  const [showFilter, setShowFilter] = React.useState(false);
   return (
     <Section title="PROFESSIONAL HISTORY">
-      {employment.map((job, i) => (
-        <Job key={i} job={job} />
-      ))}
+      {types.toString()}
+      {employment.map((job, i) => {
+        if (job.positions.filter((pos: PositionType) => includesAll(filter, pos.type))) return null;
+        return <Job key={i} job={job} fil />;
+      })}
     </Section>
   );
 };
@@ -26,8 +30,11 @@ export type PositionType = {
   startDate: string;
   leaveDate?: string;
   description: string[];
+  type: string[];
   title: string;
 };
+
+const includesAll = (arr: string[], target: string[]) => target.every((v) => arr.includes(v));
 
 const Job = ({ job }: { job: JobType }) => {
   return (
@@ -41,15 +48,19 @@ const Job = ({ job }: { job: JobType }) => {
           />
         </div>
         <div className="flex flex-col">
-          <a href={job.website} target="_blank"  className=" text-blue-100  hover:text-blue-400 transition-all uppercase whitespace-nowrap font-bold  flex space-x-1 pr-2 items-center" rel="noreferrer">
-           <span className="text-gray-700 hover:underline"> {job.company}</span> <span className=" print:hidden "><MdOpenInNew /></span>
+          <a
+            href={job.website}
+            target="_blank"
+            className=" text-blue-100  hover:text-blue-400 transition-all uppercase whitespace-nowrap font-bold  flex space-x-1 pr-2 items-center"
+            rel="noreferrer"
+          >
+            <span className="text-gray-700 hover:underline"> {job.company}</span>{" "}
+            <span className=" print:hidden ">
+              <MdOpenInNew />
+            </span>
           </a>
-          <span className="text-xs whitespace-nowrap text-gray-500">
-            {getCompanyTenure(job.positions)}
-          </span>
-          <span className="text-xs whitespace-nowrap text-gray-500">
-            {job.location}
-          </span>
+          <span className="text-xs whitespace-nowrap text-gray-500">{getCompanyTenure(job.positions)}</span>
+          <span className="text-xs whitespace-nowrap text-gray-500">{job.location}</span>
         </div>
       </div>
       <div className="flex flex-col w-full">

@@ -17,6 +17,12 @@
     "logo": "images/logos/Ausra Secondary School.jpg",
     "degreeShort": "HS",
     "degree": "High school diploma",
-    "website": "https://birzuausra.lt/"
+    "website": "https://birzuausra.lt/",
+    "grades": [
+      { "subject": "Lithuanian", "grade": "66%" },
+      { "subject": "English", "grade": "91%" },
+      { "subject": "Math", "grade": "97%" },
+      { "subject": "Physics", "grade": "88%" }
+    ]
   }
 ]

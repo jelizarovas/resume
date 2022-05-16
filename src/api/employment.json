@@ -9,12 +9,14 @@
         "title": "Technical Support Manager",
         "startDate": "11/01/2021",
         "leaveDate": "5/13/2022",
+        "type": ["manager", "developer"],
         "description": ["Build internal tools as fullstack developer"]
       },
       {
         "title": "Crew Lead",
         "startDate": "06/28/2020",
         "leaveDate": "10/30/2021",
+        "type": ["labor"],
         "description": [
           "Trained new employees on safety, and moving techniques and supervised crews of up to 10",
           "Made inventories and records of the furniture, material and supplies received for delivery. Delivered and made sure that each is well accounted for"
@@ -24,6 +26,8 @@
         "title": "Mover/Driver",
         "startDate": "02/04/2020",
         "leaveDate": "06/27/2020",
+        "type": ["labor"],
+
         "description": [
           "Loaded, packed and unpacked items, disassembled and assembled furniture for residential and commercial accounts",
           "Provided safe, on-time, and dependable transportation with a safe driving record",
@@ -43,6 +47,7 @@
         "title": "Business Manager",
         "startDate": "09/24/2018",
         "leaveDate": "07/23/2019",
+        "type": ["manager"],
         "description": [
           "Visited residential and commercial clients, made inventory assessments and drafted job estimates with a high success rate of contracting.",
           "Upgraded work forms by complying with regulations to reduce liability & reduced processing time allowing to respond faster, and to more clients.",
@@ -61,6 +66,7 @@
       {
         "startDate": "03/01/2017",
         "title": "Office Manager",
+        "type": ["manager"],
         "leaveDate": "09/15/2018",
         "description": [
           "Processed car loan application & structured deals for maximum profitability.",
@@ -82,6 +88,7 @@
         "title": "Jr. Web Developer",
         "startDate": "09/02/2015",
         "leaveDate": "01/24/2016",
+        "type": "developer",
         "description": [
           "Website creation and administration. Work was with Drupal, WordPress systems. HTML, CSS, PHP, JavaScript languages, Photoshop."
         ]
@@ -98,6 +105,7 @@
         "title": "Sales Consultant",
         "startDate": "01/15/2015",
         "leaveDate": "06/27/2016",
+        "type": ["sales"],
         "description": [
           "Showcased to store and event shoppers the latest innovations in Sony products.",
           "Explained product features and recommended solutions that fit the individual needs of the customer giving them a unique and highly personalized in-store experience.",
@@ -118,9 +126,67 @@
         "title": "Moving Helper",
         "startDate": "06/10/2014",
         "leaveDate": "09/21/2014",
+        "type": ["labor"],
         "description": [
           "Careful furniture and item relocation, packing, loading and offloading a truck, warehouse work."
         ]
+      }
+    ]
+  },
+  {
+    "location": "Dungannon, NI",
+    "company": "Greiner Packaging",
+    "logo": "images/logos/greiner.png",
+    "website": "https://www.greiner-gpi.com/en",
+    "positions": [
+      {
+        "title": "MACHINE OPERATIVE",
+        "startDate": "06/29/2013",
+        "leaveDate": "08/31/2013",
+        "type": ["labor"],
+        "description": [
+          "Fast paced production of plastic products; operate machine(s) individually, quality control and product packaging."
+        ]
+      }
+    ]
+  },
+  {
+    "location": "Dungannon, NI",
+    "company": "Moy Park",
+    "logo": "images/logos/moy-park.svg",
+    "website": "https://moypark.com/",
+    "positions": [
+      {
+        "title": "DISPATCH OPERATIVE",
+        "type": ["labor"],
+        "startDate": "05/04/2013",
+        "leaveDate": "08/31/2013",
+        "description": ["Accurate sort and assembly of customer orders; operate pallet truck"]
+      },
+      {
+        "title": "LINE WORKER",
+        "startDate": "04/01/2013",
+        "type": ["labor"],
+        "leaveDate": "05/03/2013",
+        "description": [
+          "Teamwork on assembly line, product packaging; quality control; Supply materials for assembly line."
+        ]
+      },
+      {
+        "title": "LINE WORKER",
+        "startDate": "06/01/2012",
+        "type": ["labor"],
+        "leaveDate": "08/31/2012",
+        "description": [
+          "Fast paced production of plastic products; operate machine(s) individually, quality control and product packaging."
+        ]
+      },
+      {
+        "title": "LINE WORKER",
+        "startDate": "06/01/2009",
+        "type": ["labor"],
+        "leaveDate": "08/31/2009",
+        "description": ["Prepare and package product for freezing."]
       }
     ]
   }
