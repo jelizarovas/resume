@@ -16,7 +16,7 @@
         "title": "Crew Lead",
         "startDate": "06/28/2020",
         "leaveDate": "10/30/2021",
-        "type": ["labor"],
+        "type": ["labor", "manager"],
         "description": [
           "Trained new employees on safety, and moving techniques and supervised crews of up to 10",
           "Made inventories and records of the furniture, material and supplies received for delivery. Delivered and made sure that each is well accounted for"
@@ -88,7 +88,7 @@
         "title": "Jr. Web Developer",
         "startDate": "09/02/2015",
         "leaveDate": "01/24/2016",
-        "type": "developer",
+        "type": ["developer"],
         "description": [
           "Website creation and administration. Work was with Drupal, WordPress systems. HTML, CSS, PHP, JavaScript languages, Photoshop."
         ]
@@ -161,7 +161,9 @@
         "type": ["labor"],
         "startDate": "05/04/2013",
         "leaveDate": "08/31/2013",
-        "description": ["Accurate sort and assembly of customer orders; operate pallet truck"]
+        "description": [
+          "Accurate sort and assembly of customer orders; operate pallet truck"
+        ]
       },
       {
         "title": "LINE WORKER",

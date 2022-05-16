@@ -30,7 +30,7 @@ const Player = ({ url }: PlayerProps) => {
 
   return (
     <button
-    aria-label="Name pronunciation"
+      aria-label="pronunciation"
       onClick={toggle}
       className={`${
         playing ? "opacity-95" : "opacity-50"
