@@ -1,5 +1,9 @@
 # Resume
 
+Can be reached at [http://jelizarovas.github.io/resume](http://jelizarovas.github.io/resume)
+
+And the pdf - [![this is image](public\pdf\resume_thumb.png)](https://jelizarovas.github.io/resume/pdf/Arnas%20Jelizarovas%20Resume%20EN.pdf)
+
 ## Usage
 
 To generate current pdf.

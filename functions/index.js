@@ -20,6 +20,10 @@ async function printPDF() {
       `,
   });
 
+  // await page.screenshot({
+  //   path: "../public/pdf/resume_thumb.png",
+  // });
+
   const now = new Date();
 
   const pdf = await page.pdf({
@@ -47,6 +51,7 @@ async function printPDF() {
           </div>
         `,
   });
+
   await browser.close();
 
   return pdf;
