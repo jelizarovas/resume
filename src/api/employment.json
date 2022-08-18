@@ -11,10 +11,12 @@
         "leaveDate": "5/13/2022",
         "type": ["manager", "developer"],
         "description": [
-          "Built internal tools for warehouse management as fullstack developer (Reactjs, nodejs, firebase)",
-          "Assisted with technical hardware or software issues around the office",
-          "Moved and documented company workflows to github organisation",
-          "Screened, helped hire and onboarded new employees"
+"Developed internal tools for warehouse management resulting in a reduction in sorting time and increase in employee productivity",
+"Solved all office hardware, software and technical issues",
+"Managed crews of up to 10 people, taking inventory records and coordinating inventory placement for maximum efficiency ",
+"Achieved 100% customer satisfaction through frequent communication and accessibility",
+"Screened, hired and onboarded new crew workers"
+
         ]
       },
       {
@@ -55,10 +57,10 @@
         "leaveDate": "07/23/2019",
         "type": ["manager"],
         "description": [
-          "Visited residential and commercial clients, made inventory assessments and drafted job estimates with a high success rate of contracting.",
-          "Upgraded work forms by complying with regulations to reduce liability & reduced processing time allowing to respond faster, and to more clients.",
-          "Coordinated jobs to have sufficient materials, trucks & employees. Joined crews as driver or laborer when needed.",
-          "Consulted & responded to phone & online inquiries."
+          "Visited residential and commercial clients, made inventory assessments and drafted job estimates with a high success rate of contracting",
+"Improved customer satisfaction via process improvement resulting in shorter wait times, automated alerts",
+"Increased  profitability by automating tax calculations, business expenses, and estimates"
+
         ]
       }
     ]
@@ -75,12 +77,12 @@
         "type": ["manager"],
         "leaveDate": "09/15/2018",
         "description": [
-          "Processed car loan application & structured deals for maximum profitability.",
-          "Ensured compliance with title laws and registration process, significantly reducing incompliance letters & fines from DMV.",
-          "Provided an option to apply online, opening a pool of new customers.",
-          "Revamped deal funding process to same day funding (where possible), reducing distractions and time wasted after the vehicle delivery.",
-          "Significantly reduced time of document processing and vehicle delivery by developing an application, resulting in better customer satisfaction."
-        ]
+          "Processed car loan application & structured deals for maximum profitability",
+          "Significantly reduced noncompliance letters & fines from the DMV",
+          "Implemented online sales process, allowing customers to spend less time in the dealership",
+          "Revamped financing process to same day funding, reducing time spent after vehicle delivery",
+          "Significantly reduced document processing time by developing an in house app"
+           ]
       }
     ]
   },
@@ -115,12 +117,11 @@
         "leaveDate": "06/27/2016",
         "type": ["sales"],
         "description": [
-          "Showcased to store and event shoppers the latest innovations in Sony products.",
-          "Explained product features and recommended solutions that fit the individual needs of the customer giving them a unique and highly personalized in-store experience.",
-          "Achieved individual sales goals on a regular basis.",
-          "Trained in-store sales associates and managers about Sony features and benefits.",
-          "Ensured that products were properly merchandised, displayed and functional."
-        ]
+          "Reviewed product features and recommended solutions tailored to the  individual needs of the customer, providing a unique and highly personalized in-store experience",
+          "Achieved individual sales goals on a regular basis",
+          "Trained in-store sales associates and managers on Sony features and benefits",
+          "Ensured that products were properly merchandised, displayed and functional"
+           ]
       }
     ]
   },
