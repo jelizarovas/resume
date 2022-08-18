@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App container mx-auto bg-white shadow-xl print:shadow-none pb-10 mb-24 print:mb-0">
       <Header />
-      <Employment />
       <Education />
-      <Skills />
+      <Employment />
+      {/* <Skills /> */}
     </div>
   );
 }

@@ -18,6 +18,7 @@
         ]
       },
       {
+        "skip" : true,
         "title": "Crew Lead",
         "startDate": "06/28/2020",
         "leaveDate": "10/30/2021",
@@ -87,9 +88,11 @@
     "location": "Vilnius, Lithuania",
     "logo": "images/logos/pikodata.png",
     "company": "PikoData",
+    "skip" : true,
     "website": "https://pikodata.lt/index_EN.html",
     "positions": [
       {
+        "skip" : true,
         "title": "Jr. Web Developer",
         "startDate": "09/02/2015",
         "leaveDate": "01/24/2016",

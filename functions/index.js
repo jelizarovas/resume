@@ -14,6 +14,7 @@ async function printPDF() {
   //   const pdf = await page.pdf({ format: 'A4' });
   await page.addStyleTag({
     content: `.nav { display: none} 
+    body { background-color: white}
       .navbar { border: 0px} 
       #print-button {display: none}
       @page:first {margin-top: 0;}
@@ -35,7 +36,7 @@ async function printPDF() {
     margin: {
       top: 35,
       right: 35,
-      bottom: 100,
+      bottom: 45,
       left: 25,
     },
     headerTemplate: `

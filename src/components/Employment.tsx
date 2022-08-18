@@ -19,8 +19,9 @@ export const Employment = () => {
   const [showFilter, setShowFilter] = React.useState(false);
   return (
     <Section
-      title="PROFESSIONAL HISTORY"
-      setShowFilter={setShowFilter}
+      // title="PROFESSIONAL HISTORY"
+      title="WORK EXPERIENCE"
+      // setShowFilter={setShowFilter}
       showFilter={showFilter}
     >
       {showFilter && (
@@ -36,10 +37,10 @@ export const Employment = () => {
           job.positions.filter((position: PositionType) =>
             includesSome(filter, position.type)
           ).length > 0;
-        return passesFilter ? <Job key={i} job={job} filter={filter} /> : null;
+        return passesFilter && !job?.skip  ? <Job key={i} job={job} filter={filter} /> : null;
       })}
 
-      {filter !== positionCategories && (
+      {false && filter !== positionCategories && (
         <div className="print:hidden bg-gray-200 py-4 text-center text-xs text-gray-500">
           Some jobs were hidden.{" "}
           <button
@@ -60,6 +61,8 @@ type JobType = {
   company: string;
   logo: string;
   website: string;
+  skip?: boolean;
+
 };
 
 export type PositionType = {
@@ -68,11 +71,12 @@ export type PositionType = {
   description: string[];
   type: string[];
   title: string;
+  skip?: boolean;
 };
 
 const Job = ({ job, filter }: { job: JobType; filter: string[] }) => {
   return (
-    <div className="jobDiv flex flex-col print:flex-row md:flex-row pt-4  pb-4 group transition-all ">
+    <div className="jobDiv flex flex-col print:flex-row md:flex-row pt-1 group transition-all ">
       <div className="flex min-w-[300px]  ">
         <div className="aspect-square w-[60px] h-[60px] flex items-center mx-4 rounded">
           <img
@@ -107,6 +111,7 @@ const Job = ({ job, filter }: { job: JobType; filter: string[] }) => {
       <div className="flex flex-col w-full">
         {job.positions
           .filter((position) => includesSome(filter, position.type))
+          .filter((position) => !position.skip)
           .map((position, i) => (
             <Position key={i} position={position} />
           ))}
@@ -124,10 +129,10 @@ const Position = ({ position }: { position: PositionType }) => {
           {timeEmployed(position.startDate, position?.leaveDate || undefined)}
         </div>
       </div>
-      <div className="flex flex-col text-xs items-stretch mt-2">
+      <div className="flex flex-col text-sm print:text-xs items-stretch mt-2">
         {position.description.map((duty, i) => (
           <span className="py-0.5" key={i}>
-            {duty}
+            • {duty}
           </span>
         ))}
       </div>

@@ -19,7 +19,7 @@ export const Section = ({
   return (
     <section className="">
       <details className="" open>
-        <summary className="print:list-none select-none bg-slate-600 text-white py-4 print:py-1  uppercase text-lg px-4 flex justify-between">
+        <summary className="print:list-none select-none bg-slate-600 text-white py-4 print:py-0.5  uppercase text-lg px-4 flex justify-between">
           <span>{props.title}</span>{" "}
           {props.setShowFilter && (
             <button

@@ -7,11 +7,12 @@ import { MdOpenInNew } from "react-icons/md";
 
 export const Education = () => {
   return (
-    <Section title="EDUCATION HISTORY">
-      <div className="flex flex-col sm:flex-row print:flex-row justify-evenly">
-        {education.map((school, i) => (
+    <Section title="EDUCATION">
+      <div className="flex flex-col sm:flex-row print:flex-row ">
+          <School school={education[0]} />
+        {/* {education.map((school, i) => (
           <School key={i} school={school} />
-        ))}
+        ))} */}
       </div>
     </Section>
   );
