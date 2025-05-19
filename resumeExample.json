@@ -1,0 +1,157 @@
+{
+  "basics": {
+    "name": "Alex Taylor",
+    "label": "Senior Software Engineer",
+    "email": "alex@example.com",
+    "phone": "(555) 123-4567",
+    "url": "https://alextaylor.dev",
+    "summary": "Versatile software engineer with 8+ years of experience building full-stack web applications. Specialized in React, Node.js, and cloud services with a focus on creating scalable, user-centered solutions.",
+    "location": {
+      "city": "Seattle",
+      "region": "WA"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "alextaylor",
+        "url": "https://linkedin.com/in/alextaylor"
+      },
+      {
+        "network": "GitHub",
+        "username": "alextaylor",
+        "url": "https://github.com/alextaylor"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "Frontend Development",
+      "keywords": ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Redux", "Responsive Design"]
+    },
+    {
+      "name": "Backend Development",
+      "keywords": ["Node.js", "Express", "REST APIs", "GraphQL", "MongoDB", "PostgreSQL"]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywords": ["AWS", "Firebase", "Docker", "CI/CD", "Terraform"]
+    },
+    {
+      "name": "Tools & Methods",
+      "keywords": ["Git", "Agile", "Jest", "Cypress", "Performance Optimization"]
+    }
+  ],
+  "work": [
+    {
+      "company": "TechFusion",
+      "position": "Senior Software Engineer",
+      "startDate": "2021-03",
+      "endDate": "Present",
+      "highlights": [
+        "Led the development of a React-based dashboard that improved client engagement metrics by 37%",
+        "Architected and implemented a microservice-based API system using Node.js and AWS Lambda",
+        "Mentored junior developers through code reviews and pair programming sessions",
+        "Reduced page load times by 45% through code splitting and lazy loading techniques"
+      ],
+      "technologies": ["React", "TypeScript", "Node.js", "AWS", "GraphQL"]
+    },
+    {
+      "company": "InnovateSoft",
+      "position": "Full Stack Developer",
+      "startDate": "2018-06",
+      "endDate": "2021-02",
+      "highlights": [
+        "Built responsive web applications using React and Redux that served 50K+ daily users",
+        "Implemented CI/CD pipelines that reduced deployment time by 60%",
+        "Collaborated with design team to create intuitive user interfaces and improve UX",
+        "Developed RESTful APIs with Node.js and Express connecting to MongoDB and PostgreSQL"
+      ],
+      "technologies": ["React", "Redux", "Node.js", "MongoDB", "Docker"]
+    },
+    {
+      "company": "WebSolutions Inc.",
+      "position": "Frontend Developer",
+      "startDate": "2016-01",
+      "endDate": "2018-05",
+      "highlights": [
+        "Developed and maintained multiple client-facing web applications",
+        "Worked in an Agile team to deliver features on tight deadlines",
+        "Improved website performance by implementing modern JavaScript practices",
+        "Contributed to company's component library used across multiple projects"
+      ],
+      "technologies": ["JavaScript", "HTML5", "CSS3", "jQuery", "SASS"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Washington",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2012-09",
+      "endDate": "2016-05",
+      "gpa": "3.8",
+      "courses": ["Data Structures and Algorithms", "Web Development", "Database Systems", "Software Engineering"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "DataVis Platform",
+      "description": "Open-source data visualization platform with customizable charts and dashboards",
+      "highlights": [
+        "Built with React and D3.js with a Node.js backend",
+        "Featured on Product Hunt with 500+ upvotes",
+        "Implemented dynamic theming and responsive layouts"
+      ],
+      "url": "https://github.com/alextaylor/datavis-platform",
+      "technologies": ["React", "D3.js", "Node.js"]
+    },
+    {
+      "name": "CloudNotes",
+      "description": "Productivity app for collaborative note-taking with real-time updates",
+      "highlights": [
+        "Utilized Firebase Real-time Database for syncing",
+        "Implemented markdown support and rich text editing",
+        "Added offline capabilities with service workers"
+      ],
+      "url": "https://cloudnotes.app",
+      "technologies": ["React", "Firebase", "Redux", "PWA"]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Developer – Associate",
+      "issuer": "Amazon Web Services",
+      "date": "2022-04"
+    },
+    {
+      "name": "Professional Scrum Master I",
+      "issuer": "Scrum.org",
+      "date": "2020-11"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Professional working proficiency"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Open Source Contributing",
+      "keywords": ["React ecosystem", "Developer tools"]
+    },
+    {
+      "name": "Technical Writing",
+      "keywords": ["Web development", "Best practices"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Available upon request"
+    }
+  ]
+}
