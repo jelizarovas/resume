@@ -23,7 +23,7 @@ export const Header = () => {
           Action={
             <Player
               url={
-                process.env.PUBLIC_URL +
+                import.meta.env.BASE_URL +
                 "/sounds/Arnas Jeliarovas name sound it out.mp3"
               }
             />
@@ -56,7 +56,9 @@ export const Header = () => {
         <div className="flex justify-center space-x-2 items-center group">
           <GrDocumentPdf />
           <a
-            href={`${process.env.PUBLIC_URL}/pdf/Arnas Jelizarovas Resume EN.pdf`}
+            href={`${
+              import.meta.env.BASE_URL
+            }pdf/Arnas Jelizarovas Resume EN.pdf`}
             target="_blank"
             className="group-hover:underline"
             rel="noreferrer"
@@ -80,15 +82,6 @@ export const Header = () => {
   );
 };
 
-type SubHeaderType = {
-  title: string;
-  data: string;
-  type?: string;
-  className?: string;
-  Icon?: React.FunctionComponent<any>;
-  Action?: React.ReactNode;
-};
-
 const SubHeader = ({
   Icon,
   title,
@@ -97,7 +90,7 @@ const SubHeader = ({
   type,
   className = "",
   ...props
-}: SubHeaderType) => {
+}) => {
   return (
     <div
       className={

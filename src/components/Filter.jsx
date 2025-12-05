@@ -1,18 +1,10 @@
 import React from "react";
 
-export const Filter = ({
-  filter,
-  setFilter,
-  positionCategories,
-}: {
-  filter: string[];
-  setFilter: any;
-  positionCategories: string[];
-}) => {
-  const handleChange = (event: { target: any }) =>
-    setFilter((f: string[]) =>
+export const Filter = ({ filter, setFilter, positionCategories }) => {
+  const handleChange = (event) =>
+    setFilter((f) =>
       f.includes(event.target.value)
-        ? f.filter((v: string) => v !== event.target.value)
+        ? f.filter((v) => v !== event.target.value)
         : [...f, event.target.value]
     );
   return (
@@ -29,15 +21,7 @@ export const Filter = ({
   );
 };
 
-const CheckBox = ({
-  label,
-  handleChange,
-  checked,
-}: {
-  label: string;
-  handleChange: React.ChangeEventHandler<HTMLInputElement>;
-  checked: boolean;
-}) => {
+const CheckBox = ({ label, handleChange, checked }) => {
   return (
     <label className="flex space-x-2 items-center">
       <input
@@ -51,7 +35,7 @@ const CheckBox = ({
   );
 };
 
-function titleCase(v: string) {
+function titleCase(v) {
   const str = v.toLowerCase().split(" ");
   for (var i = 0; i < str.length; i++) {
     str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);

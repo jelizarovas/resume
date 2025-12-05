@@ -18,17 +18,7 @@ export const Education = () => {
   );
 };
 
-type SchoolType = {
-  name: string;
-  startDate: string;
-  finishDate: string;
-  location: string;
-  logo: string;
-  degree: string;
-  website: string;
-};
-
-const School = ({ school }: { school: SchoolType }) => {
+const School = ({ school }) => {
   return (
     <div className="jobDiv flex flex-col w-1/2 mx-2  py-2 group">
       <div className="flex ">

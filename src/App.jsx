@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Education />
       <Employment />
-      {/* <Skills /> */}
+      <Skills />
     </div>
   );
 }

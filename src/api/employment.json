@@ -1,5 +1,25 @@
 [
   {
+    "location": "Burien, WA",
+    "company": "Honda of Burien",
+    "logo": "images/logos/honda-of-burien.png",
+    "website": "https://www.burienhonda.com/",
+    "positions": [
+      {
+        "title": "Sales Consultant",
+        "startDate": "05/01/2023",
+        "leaveDate": "",
+        "type": ["sales", "developer"],
+        "description": [
+          "Assist Costco Auto Program members and retail customers in selecting vehicles that match their needs and budget",
+          "Develop and maintain internal tools to streamline inventory management and quoting",
+          "Leverage AI-driven workflows to respond to internet leads quickly and consistently",
+          "Coordinate with finance and management to structure compliant, profitable deals while maintaining customer satisfaction"
+        ]
+      }
+    ]
+  },
+  {
     "location": "Seattle, WA",
     "company": "Super Friends Moving",
     "website": "https://superfriendsmoving.com/",
@@ -11,16 +31,15 @@
         "leaveDate": "5/13/2022",
         "type": ["manager", "developer"],
         "description": [
-"Developed internal tools for warehouse management resulting in a reduction in sorting time and increase in employee productivity",
-"Solved all office hardware, software and technical issues",
-"Managed crews of up to 10 people, taking inventory records and coordinating inventory placement for maximum efficiency ",
-"Achieved 100% customer satisfaction through frequent communication and accessibility",
-"Screened, hired and onboarded new crew workers"
-
+          "Developed internal tools for warehouse management resulting in a reduction in sorting time and increase in employee productivity",
+          "Solved all office hardware, software and technical issues",
+          "Managed crews of up to 10 people, taking inventory records and coordinating inventory placement for maximum efficiency ",
+          "Achieved 100% customer satisfaction through frequent communication and accessibility",
+          "Screened, hired and onboarded new crew workers"
         ]
       },
       {
-        "skip" : true,
+        "skip": true,
         "title": "Crew Lead",
         "startDate": "06/28/2020",
         "leaveDate": "10/30/2021",
@@ -58,9 +77,8 @@
         "type": ["manager"],
         "description": [
           "Visited residential and commercial clients, made inventory assessments and drafted job estimates with a high success rate of contracting",
-"Improved customer satisfaction via process improvement resulting in shorter wait times, automated alerts",
-"Increased  profitability by automating tax calculations, business expenses, and estimates"
-
+          "Improved customer satisfaction via process improvement resulting in shorter wait times, automated alerts",
+          "Increased  profitability by automating tax calculations, business expenses, and estimates"
         ]
       }
     ]
@@ -82,7 +100,7 @@
           "Implemented online sales process, allowing customers to spend less time in the dealership",
           "Revamped financing process to same day funding, reducing time spent after vehicle delivery",
           "Significantly reduced document processing time by developing an in house app"
-           ]
+        ]
       }
     ]
   },
@@ -90,11 +108,11 @@
     "location": "Vilnius, Lithuania",
     "logo": "images/logos/pikodata.png",
     "company": "PikoData",
-    "skip" : true,
+    "skip": true,
     "website": "https://pikodata.lt/index_EN.html",
     "positions": [
       {
-        "skip" : true,
+        "skip": true,
         "title": "Jr. Web Developer",
         "startDate": "09/02/2015",
         "leaveDate": "01/24/2016",
@@ -121,7 +139,7 @@
           "Achieved individual sales goals on a regular basis",
           "Trained in-store sales associates and managers on Sony features and benefits",
           "Ensured that products were properly merchandised, displayed and functional"
-           ]
+        ]
       }
     ]
   },

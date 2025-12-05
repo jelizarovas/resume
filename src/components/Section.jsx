@@ -1,21 +1,7 @@
 import React, { Dispatch, SetStateAction } from "react";
 import { MdFilterList, MdKeyboardArrowUp } from "react-icons/md";
 
-export const Section = ({
-  showFilter = false,
-  ...props
-}: {
-  title: string;
-  showFilter?: boolean;
-  setShowFilter?: Dispatch<SetStateAction<boolean>>;
-  children:
-    | boolean
-    | React.ReactChild
-    | React.ReactFragment
-    | React.ReactPortal
-    | null
-    | undefined;
-}) => {
+export const Section = ({ showFilter = false, ...props }) => {
   return (
     <section className="">
       <details className="" open>

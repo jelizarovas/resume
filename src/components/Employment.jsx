@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdOpenInNew } from "react-icons/md";
 import employment from "../api/employment.json";
 import { getCompanyTenure, includesSome, timeEmployed } from "../common/utils";
 import { Filter } from "./Filter";
 import { Section } from "./Section";
 
-const positionCategories = employment.reduce<string[]>((acc, job) => {
+const positionCategories = employment.reduce((acc, job) => {
   job.positions.forEach(({ type }) =>
     type.forEach((t) => {
       if (!acc.includes(t)) acc.push(t);
@@ -21,7 +21,7 @@ export const Employment = () => {
     <Section
       // title="PROFESSIONAL HISTORY"
       title="WORK EXPERIENCE"
-      // setShowFilter={setShowFilter}
+      setShowFilter={setShowFilter}
       showFilter={showFilter}
     >
       {showFilter && (
@@ -34,10 +34,12 @@ export const Employment = () => {
 
       {employment.map((job, i) => {
         const passesFilter =
-          job.positions.filter((position: PositionType) =>
+          job.positions.filter((position) =>
             includesSome(filter, position.type)
           ).length > 0;
-        return passesFilter && !job?.skip  ? <Job key={i} job={job} filter={filter} /> : null;
+        return passesFilter && !job?.skip ? (
+          <Job key={i} job={job} filter={filter} />
+        ) : null;
       })}
 
       {false && filter !== positionCategories && (
@@ -55,35 +57,12 @@ export const Employment = () => {
   );
 };
 
-type JobType = {
-  positions: PositionType[];
-  location: string;
-  company: string;
-  logo: string;
-  website: string;
-  skip?: boolean;
-
-};
-
-export type PositionType = {
-  startDate: string;
-  leaveDate?: string;
-  description: string[];
-  type: string[];
-  title: string;
-  skip?: boolean;
-};
-
-const Job = ({ job, filter }: { job: JobType; filter: string[] }) => {
+const Job = ({ job, filter }) => {
   return (
     <div className="jobDiv flex flex-col print:flex-row md:flex-row pt-1 group transition-all ">
       <div className="flex min-w-[300px]  ">
         <div className="aspect-square w-[60px] h-[60px] flex items-center mx-4 rounded">
-          <img
-            src={process.env.PUBLIC_URL + "/" + job.logo}
-            alt={job.company}
-            className="grayscale hover:grayscale-0 group-hover:grayscale-[50%]  transition-all"
-          />
+          <CompanyLogo job={job} />
         </div>
         <div className="flex flex-col">
           <a
@@ -120,7 +99,7 @@ const Job = ({ job, filter }: { job: JobType; filter: string[] }) => {
   );
 };
 
-const Position = ({ position }: { position: PositionType }) => {
+const Position = ({ position }) => {
   return (
     <div className="w-full  px-4 mt-2 md:mt-0 md:mb-2  print:mt-0">
       <div className="border-b-2 border-gray-200 px-2 print:px-0 md:px-0 flex items-center justify-between">
@@ -136,6 +115,33 @@ const Position = ({ position }: { position: PositionType }) => {
           </span>
         ))}
       </div>
+    </div>
+  );
+};
+
+const CompanyLogo = ({ job }) => {
+  const [error, setError] = useState(false);
+
+  const logoSrc = import.meta.env.BASE_URL + "/" + job.logo;
+
+  // Generate initials (e.g., “HB” for Honda of Burien)
+  const initials = job.company
+    .split(" ")
+    .map((word) => word[0])
+    .join("")
+    .toUpperCase()
+    .slice(0, 3);
+
+  return !error ? (
+    <img
+      src={logoSrc}
+      alt={job.company}
+      onError={() => setError(true)}
+      className="grayscale hover:grayscale-0 group-hover:grayscale-50 transition-all"
+    />
+  ) : (
+    <div className="w-full select-none h-full grayscale flex items-center justify-center bg-blue-400 text-white font-bold text-lg">
+      {initials}
     </div>
   );
 };

@@ -10,7 +10,9 @@ async function printPDF() {
     defaultViewport: { width: 1400, height: 1080 },
   });
   const page = await browser.newPage();
-  await page.goto("http://localhost:3000/", { waitUntil: "networkidle0" });
+  await page.goto("http://localhost:5173/resume/", {
+    waitUntil: "networkidle0",
+  });
   //   const pdf = await page.pdf({ format: 'A4' });
   await page.addStyleTag({
     content: `.nav { display: none} 

@@ -1,7 +1,6 @@
 import skills from "../api/skills.json";
 import { Section } from "./Section";
 
-
 export const Skills = () => {
   return (
     <Section title="Skills">
@@ -14,15 +13,10 @@ export const Skills = () => {
   );
 };
 
-type SkillProps = {
-    name: string
-}
-
-
-const Skill = ({skill} : {skill: SkillProps}) => {
+const Skill = ({ skill }) => {
   return (
     <div className="jobDiv flex flex-col w-1/2 mx-2  py-2 group">
-     {skill.name}
+      {skill.name}
     </div>
   );
 };

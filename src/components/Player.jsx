@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { MdVolumeOff, MdVolumeUp } from "react-icons/md";
 
-const useAudio = (url: string) => {
+const useAudio = (url) => {
   const [audio] = useState(new Audio(url));
   const [playing, setPlaying] = useState(false);
 
@@ -18,14 +18,10 @@ const useAudio = (url: string) => {
     };
   }, [audio]);
 
-  return [playing, toggle] as const;
+  return [playing, toggle];
 };
 
-type PlayerProps = {
-  url: string;
-};
-
-const Player = ({ url }: PlayerProps) => {
+const Player = ({ url }) => {
   const [playing, toggle] = useAudio(url);
 
   return (
